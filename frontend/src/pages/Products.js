@@ -12,56 +12,56 @@ const Products = ({ onAddToCart }) => {
       name: "Wireless Headphones",
       description: "High-quality wireless headphones with noise cancellation",
       price: 99.99,
-      image: null
+      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop"
     },
     {
       id: 2,
       name: "Smartphone",
       description: "Latest smartphone with advanced features",
       price: 699.99,
-      image: null
+      image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
     },
     {
       id: 3,
       name: "Laptop",
       description: "Powerful laptop for work and gaming",
       price: 1299.99,
-      image: null
+      image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=400&fit=crop"
     },
     {
       id: 4,
       name: "Smart Watch",
       description: "Fitness tracking and notifications",
       price: 199.99,
-      image: null
+      image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop"
     },
     {
       id: 5,
       name: "Gaming Console",
       description: "Next-gen gaming console",
       price: 499.99,
-      image: null
+      image: "https://images.unsplash.com/photo-1486401899868-0e435ed85128?w=400&h=400&fit=crop"
     },
     {
       id: 6,
       name: "Camera",
       description: "Professional DSLR camera",
       price: 899.99,
-      image: null
+      image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=400&fit=crop"
     },
     {
       id: 7,
       name: "Tablet",
       description: "Portable tablet for entertainment",
       price: 399.99,
-      image: null
+      image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop"
     },
     {
       id: 8,
       name: "Speaker System",
       description: "Premium audio speaker system",
       price: 299.99,
-      image: null
+      image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&h=400&fit=crop"
     }
   ];
 
