@@ -1,0 +1,16 @@
+[dotenv@16.6.0] injecting env (11) from .env
+[dotenv@16.6.0] injecting env (11) from .env
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Products' AND TABLE_SCHEMA = 'quickshop_db'
+Executing (default): SHOW INDEX FROM `Products`
+Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Orders' AND TABLE_SCHEMA = 'quickshop_db'
+Executing (default): SHOW INDEX FROM `Orders`
+Database connected successfully
+Server is running on port 5001
+Executing (default): INSERT INTO `Orders` (`id`,`customerEmail`,`customerName`,`items`,`totalAmount`,`stripePaymentIntentId`,`status`,`paymentStatus`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?,?,?,?,?);
+Executing (default): INSERT INTO `Orders` (`id`,`customerEmail`,`customerName`,`items`,`totalAmount`,`stripePaymentIntentId`,`status`,`paymentStatus`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?,?,?,?,?);
+Executing (default): UPDATE `Orders` SET `status`=?,`paymentStatus`=?,`updatedAt`=? WHERE `id` = ?
+Executing (default): SELECT `id`, `customerEmail`, `customerName`, `items`, `totalAmount`, `stripePaymentIntentId`, `status`, `paymentStatus`, `createdAt`, `updatedAt` FROM `Orders` AS `Order` WHERE `Order`.`id` = '31b3ea9d-9a02-43cd-9076-b90495c1bee6';
+Email sending error: TypeError: nodemailer.createTransporter is not a function
+    at sendConfirmationEmail (/Users/priyanshrajput/Documents/Web_dev /Ecommerce Website/Backend/Controllers/paymentController.js:111:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async confirmPayment (/Users/priyanshrajput/Documents/Web_dev /Ecommerce Website/Backend/Controllers/paymentController.js:64:7)
